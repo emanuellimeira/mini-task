@@ -22,4 +22,5 @@ mrt:bootstrap-3
 momentjs:moment
 accounts-base
 accounts-password
+stylus@=2.513.14
 ian:accounts-ui-bootstrap-3

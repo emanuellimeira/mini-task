@@ -13,7 +13,7 @@
 			</div>
 			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav navbar-right">
-					
+					{{> loginButtons}}
 				</ul>
 			</div>
 		</nav>
@@ -22,9 +22,18 @@
     
 
     <main class="container">
-		{{> novo}}
 
-    	{{> lista}}
+		{{#if currentUser}}
+
+			{{> novo}}
+    		{{> lista}}
+
+    	{{else}}
+
+    		Você precisa estar logado.
+    		
+    	{{/if}}
+
     </main>
   
 </body>
