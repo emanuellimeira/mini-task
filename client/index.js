@@ -1,3 +1,3 @@
 Meteor.startup(function(){
-	Meteor.subscrive("tarefas");
+	Meteor.subscribe("tarefas");
 });
